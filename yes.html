@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属于史鑫琦的网页</title>
+    <link href="style2.css" rel="stylesheet"/>
+    <style>
+        .mySlides {display:none;}
+        </style>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Aug 2, 2023 00:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("kikibirth").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("kikibirth").innerHTML = "你今年的生日到啦";
+          }
+        }, 1000);
+        </script>
+</head>
+<body style="background: url('wallpaper2.jpg')";>
+    <main>
+    <h1 style="color: red; font-size: 50px; font-style: italic;">两年纪念日快乐！！	&#10084; 	&#10084;</h1>
+    <article>
+    <h2>只属于你的网页哟，这是我的第一次给人做网页。这是我小时候的心愿呀， 希望以后能给喜欢的人
+        做出一个网站也出来，终于十八岁的时候完成啦。
+    </h2>
+    <p>这两年来挺不容易的，虽然真的很幸苦，但是我们还是一样熬过来啦。这两年发生的点点滴滴，我都一直在记得。
+        从我们一开始认识，你刚进入高一，在军训，跟我打游戏还感冒了。一开始都是你在找我聊话题，找我打游戏。
+        那时候开始我们就天天都黏在一起。宝宝呀，你也陪我度过了好多我人生里的重要时刻，从高中到高考，再到大学。
+        再过几个月你也要高考啦，宝宝虽然学习很压力，但是宝宝放心，我一直都在哒。我要见证你上个好大学呢。你一直跟我
+        抱怨说你变胖啦，穿不到好看的裙子，好看的衣服。但我觉得并没什么呀，宝宝已经立誓说以后上大学之前要减肥，啊哈哈哈，
+        所以宝宝以后会变得很好很好看，我很期待的呀。加油！！我也要立誓读好我的专业，以后要赚大钱养家。虽然很无聊很死板，一直盯着
+        电脑看，但是兴趣是还在的呀。
+        </p>
+        <p>其实我们很快就能见面啦，终于不用隔着屏幕说话。以前的作文都是在说过去，但现在我要说的是未来。
+            快要成年啦，希望宝宝以后少点为了一件小事生气难过一整天，心态很重要很重要。我也会一直陪着你哒。
+            宝宝高考完啦，有时间探索一下自己的兴趣，不用故意去找很赚钱的领域，找适合自己的就好。只要用心做，肯定不差钱。宝宝也可以在中国拿到了学历，再
+            考虑过来我这里续读或者在这里做生意。毕竟宝宝很聪明。要是我那时候在
+            工作，我可以放工回来接你回家，带你去吃晚餐。我呢，我如果有能力续读的话，我会尽量拿更高点的学历。毕业出来薪水更高嘛， 我就继续找政府帮我贴学费。哈哈哈。当你看见这作文的时候其实我已经参加投选了，
+            不知道我投给谁了呢，嘿嘿。我没有后悔读这科的专业呀，我觉得学的挺适合的，至少我不用像隔壁的商业专业，和平面设计专业一样卷。我看那些平面设计和
+            媒体设计的每个星期都在那画图，感觉更无聊啦。哈哈哈哈哈。我这作文是从十月十九号开始写的，然后做的这个是网页开发啦，虽然很一般，但这是我的第一次嘛，所以还是很用心，
+            你看见的那些按钮，壁纸，字体都是几百句甚至接近千句代码组成的。如果我们视频你看我好像不怎么跟你说话没有笑的话，在认真的看屏幕，别怀疑我在敲代码作死。嘿嘿。</p>
+        <p>我还会时不时的去看看聊天记录，然后看着我们怎么熬过来的。有些很开心，有些还闹分手，宝宝还写了好长一篇的作文给我。我真的好难过好难过，但也很开心宝宝还在这里陪着我。
+           别人也没想到我们竟然这么会熬，这还是值得炫耀的。（隔着屏幕谈了两年, 是怎么做到的？？）隔着屏幕都能几年，见面了那不是可以继续一辈子啦。
+        </p>
+
+            <p style="font-size: 50px; font-style: italic; font-family: sans-serif; color: pink; border: 4px outset hsla(0,60%,70%, .5)" id="kikibirth"></p>
+            <p style="font-size: 40px"><strong>这是你的生日倒数哟,还没到你生日之前不会停。（这个东西花了我两天）哈哈哈。</strong></p>
+
+
+
+              <!--kiki picture slideshow-->
+
+            <div style="max-width:500px; border: pink 9px solid;">
+                <img class="mySlides" src="kiki1.jpg" style="width:100%">
+                <img class="mySlides" src="kiki2.jpg" style="width:100%">
+                <img class="mySlides" src="kiki3.jpg" style="width:100%">
+                <img class="mySlides" src="kiki4.jpg" style="width:100%">
+              </div>
+
+              <script>
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000); // Change image every 5 seconds
+              }
+              </script>
+              <br/><br/>
+              <figure>
+              <img src="memory.jpg" alt="回忆"style="display: block; margin-left: auto;
+              margin-right: auto;width: 90%; border: pink outset 4px;"/>
+              <br/>
+              <figcaption>这是宝宝在今年一月二十二号拍给我的哟，我还收藏着没丢哟!</figcaption>
+              <br/>
+              <video autoplay loop muted width="500px" style="display: block; margin-left: auto;
+              margin-right: auto;width: 90%;" >
+                <source src="video1.mp4" type="video/mp4"/>
+              </video>
+              <figcaption style="text-align:center;">中药真好喝</figcaption>
+              <div class="row">
+                <div class="column">
+                  <img src="kiki5.jpg" alt="" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="kiki6.jpg" alt="" style="width:100%">
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <img src="kiki7.jpg" alt="" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="kiki8.jpg" alt="" style="width:100%">
+                </div>
+              </div>
+              <br/>
+              <video autoplay loop muted width="500px" style="display: block; margin-left: auto;
+              margin-right: auto;width: 90%;">
+                <source src="video1a.mp4" type="video/mp4">
+              </video>
+              <figcaption style="text-align: center;">漂亮的三金同学</figcaption>
+
+              <p style="text-align: center; color: red; font-weight: bold; font-size: large; font-family:Arial, Helvetica, sans-serif">两年纪念日快乐！！我永远爱你哟我的宝</p>
+              <div>
+              <video autoplay loop muted width="500px" style="display: block; margin-left: auto;
+              margin-right: auto;width: 90%;">
+                <source src="video.mp4" type="video/mp4">
+              </video>
+              </div>
+              <br/><br/>
+
+              <div class="container">
+                <div class="heart"></div>
+              </div>
+              <figcaption style="text-align: center;">这是我做的爱心拿，我感觉我做的比剧里还好看！</figcaption>
+              </figure>
+        </article>
+        </main>
+        <audio autoplay controls loop>
+          <source src="backgroundsong.mp3" type="audio/mpeg">
+        </audio>
+        <p style="text-align: center;">点这里暂停音乐鸭。&#9757;</p>
+</body>
+</html>

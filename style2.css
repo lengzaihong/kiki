@@ -1,0 +1,111 @@
+main, aside{
+    padding: 6px;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ 
+ 
+ main {
+    width:100%;
+   display: flex;
+   flex-wrap: wrap;
+ }
+ 
+ article {
+    width: 95%;
+ }
+
+ p{
+   font-size: 18px;
+ }
+
+ * {
+   box-sizing: border-box;
+ }
+ 
+ .column {
+   float: left;
+   width: 50%;
+   padding: 3px;
+ }
+ 
+ /* Clearfix (clear floats) */
+ .row::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+
+
+ /*background linear */
+ body {
+  animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+/*heart animation*/
+.container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px ;
+    background: #ffddee;
+}
+
+.heart {
+  height: 100px;
+  width: 100px;
+  background: red;
+  position: relative;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 90px red;
+  animation: heart 0.6s linear infinite;
+}
+
+@keyframes heart {
+  0% {
+      transform: rotate(-45deg) scale(1.00);
+  }
+  80% {
+      transform: rotate(-45deg) scale(0.90);
+  }
+  100% {
+      transform: rotate(-45deg) scale(0.80);
+  }
+}
+
+.heart::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: red;
+  top: -55%;
+  border-radius: 50px;
+  box-shadow: -10px 10px 90px red;
+}
+
+.heart::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: red;
+  right: -55%;
+  border-radius: 50px;
+  box-shadow: -10px 10px 90px red;
+}
